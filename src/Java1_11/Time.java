@@ -85,14 +85,7 @@ public class Time {
         }
     }
 
-    @Override
-    public String toString() {
-        return "Time{" +
-                "hour=" + hour +
-                ", minute=" + minute +
-                ", second=" + second +
-                '}';
-    }
+
     public void nextSecond() {
         if (hour == 23 && minute == 59 && second == 59) {
             hour = 0;
@@ -133,5 +126,8 @@ public class Time {
             return;
         }
         second--;
+    }
+    public String toString() {
+        return hour+":"+minute+":"+second;
     }
 }

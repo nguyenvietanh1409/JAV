@@ -16,7 +16,7 @@ public class TestTime {
         System.out.println("Minute: "+ t1.getMinute());
         System.out.println("Second: "+ t1.getSecond());
 
-        t1.setTime(20,20,20);
+        t1.setTime(7,0,0);
         System.out.println("After setTime");
         System.out.println("Hour: "+ t1.getHour());
         System.out.println("Minute: "+ t1.getMinute());
@@ -28,6 +28,7 @@ public class TestTime {
         System.out.println("After nextSecond");
         System.out.println(t1.toString());
 
+        t1.setTime(7,0,0);
         t1.previousSecond();
         System.out.println("After previousSecond");
         System.out.println(t1.toString());
